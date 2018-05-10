@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <i class="icon iconfont icon-angle-left"></i>
+            <p>无连接</p>
+            <span class="icon iconfont icon-gengduo-2"></span>
+            <strong><img src="img/img1.jpg" alt=""></strong>
+        </header>
+        <nav>
+            <dl>
+                <dt>
+                    <i class="icon iconfont icon-tuichu"></i>
+                </dt>
+                <dd>电源</dd>
+            </dl>
+            <dl>
+                <dt>
+                    <i class="icon iconfont icon-iconhuidaoshouye"></i>
+                </dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt>
+                    <i class="icon iconfont icon-gengduo-2"></i>
+                </dt>
+                <dd>菜单</dd>
+            </dl>
+            <dl>
+                <dt>
+                    <i class="icon iconfont icon-bianji1"></i>
+                </dt>
+                <dd>截屏</dd>
+            </dl>
+        </nav>
+        <main>
+            <p>滑动控制上下左右，点击确定长按调节电视音量</p>
+        </main>
+        <footer>
+            <div class="left">
+                <i class="icon iconfont icon-gongzuo"></i>
+            </div>
+            <div class="center">
+                <i class="icon iconfont icon-zhuanhuan"></i>
+            </div>
+            <div class="right">
+
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    $("nav dl dd").on("click", function() {
+        $(this).addClass("active").siblings().removeClass("active");
+    })
+</script>
+
+</html>

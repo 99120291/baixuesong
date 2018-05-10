@@ -1,0 +1,96 @@
+@import "common.scss";
+#wrap {
+    @include num(100%, 100%);
+    display: flex;
+    flex-direction: column;
+    background: #F0F0F0;
+    header {
+        @include num(100%, auto);
+        display: flex;
+        text-align: center;
+        line-height: 2;
+        color: #919091;
+        p {
+            margin-top: pxTorem(8px);
+            font-size: pxTorem(20px);
+            flex: 7;
+        }
+        i {
+            flex: 1;
+            font-size: pxTorem(30px);
+        }
+        span {
+            flex: 1;
+            font-size: pxTorem(30px);
+        }
+        strong {
+            flex: 1;
+            font-size: pxTorem(30px);
+            img {
+                width: 70%;
+            }
+        }
+    }
+    nav {
+        @include num(90%, auto);
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+        padding-bottom: pxTorem(20px);
+        border-bottom: solid 5px #E5E5E5;
+        dl {
+            flex: 1;
+            padding-left: pxTorem(20px);
+            dt {
+                width: pxTorem(40px);
+                border: solid 4px #E5E5E5;
+                border-radius: 50%;
+                i {
+                    text-align: center;
+                    font-size: pxTorem(30px);
+                }
+            }
+            dd {
+                line-height: 3;
+                padding-right: pxTorem(20px);
+            }
+        }
+        .active {
+            color: blue;
+        }
+    }
+    main {
+        @include num(80%, auto);
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 4px solid #E5E5E5;
+        p {
+            color: #9A999A;
+            @include num(100%, auto);
+            font-size: pxTorem(18px);
+            margin-top: 60%;
+            margin-bottom: 60%;
+        }
+    }
+    footer {
+        @include num(100%, auto);
+        display: flex;
+        text-align: center;
+        line-height: 3;
+        .left {
+            flex: 3;
+            i {
+                font-size: pxTorem(30px);
+            }
+        }
+        .center {
+            flex: 3;
+            i {
+                font-size: pxTorem(30px);
+            }
+        }
+        .right {
+            flex: 4;
+        }
+    }
+}
